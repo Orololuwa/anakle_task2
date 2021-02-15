@@ -1,0 +1,93 @@
+.CarouselCard{
+    width: 40rem;
+    border-radius: 2rem;
+    padding: 1rem;
+    background-color: #fff;
+    margin-right: 2rem;
+    color: #232323;
+
+
+    .Product{
+        display: flex;
+        flex-direction: row;
+        padding: 1.5rem 1rem;
+
+        .ProductImage{
+            width: 8.7rem;
+            height: 8.7rem;
+            border-radius: 1.2rem;
+            background-color: #dadada;
+            margin-right: 1rem;
+        }
+
+        .ProductName{
+
+            h3{
+                font-weight: 500;
+                font-size: 1.6rem;
+                width: 22.6rem;
+            }
+
+            p{
+                font-weight: 500;
+                font-size: 1.2rem; 
+                color: #2f4cdd;               
+            }
+        }
+    }
+
+    .Review{
+        padding: 2rem 1rem;
+        color: #000;
+
+        p{
+            font-size: 1.8rem;
+            font-weight: 400;
+        }
+    }
+
+    .Customer{
+        margin: 1rem;
+        border-radius: 1.5rem;
+        background: linear-gradient(to right, #2C3B83, #3D018A);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 2.5rem;
+        color: #fff;
+
+        .CustomerImage{
+            width: 5.5rem;
+            height: 5.5rem;
+            border-radius: 100%;
+            background-color: #c4c4c4;
+        }
+
+        .CustomerDetails{
+
+            h3{
+                font-size: 1.8rem;
+                font-weight: 600;
+            }
+
+            p{
+                font-size: 1.4rem;
+                font-weight: 400;
+            }
+        }
+
+        .Ratings{
+            display: inline-flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+
+            p{
+                font-weight: 600;
+                font-size: 2.2rem;
+                padding: .5rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,65 @@
+.Content{
+    margin: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    background-color: #f9f9f9;
+    padding: 2.5rem;
+}
+
+.Content .titleContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Content .titleContainer .filterPeriod{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+Content .titleContainer .filterPeriod .periodTitle{
+    padding-left: 2rem;
+}
+
+.arrowPrev, .arrowNext{
+    width: 6.2rem;
+    height: 6.2rem;
+    background-color: #fff;
+    color: #2f4cdd;
+    font-size: 4rem;
+    cursor: pointer;
+    text-align: center;
+    padding: auto;
+    border-radius: 14px;
+    box-shadow: 0px 14px 22px rgba(0, 0, 0, 0.32);
+}
+
+.horizontal-menu{
+    text-align: left;
+    position: relative;
+}
+
+.menu-item-wrapper{
+    white-space: normal;
+}
+
+.menu-wrapper--inner{
+    transform: translate3d(0px, 0px, 0px);
+}
+
+.arrowPrev{
+    position: absolute;
+    left: calc(0% - 6.2rem / 2);
+    top: calc(50% - 6.2rem / 2);
+    z-index: 999;
+}
+
+.arrowNext{
+    position: absolute;
+    right: calc(0% - 6.2rem / 2);
+    top: calc(50% - 6.2rem / 2);
+    z-index: 999;
+}

@@ -1,0 +1,163 @@
+.nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2.5rem;
+}
+
+.nav .searchContainer {
+    display: inline-flex;
+    width: 40rem;
+    height: 4rem;
+    flex: 1 1 1;
+    position: relative;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-right: 5rem;
+}
+  
+.nav .searchIcon {
+    padding: 0.5rem;
+    cursor: pointer;
+    background-color: #fdfdfd;
+}
+  
+.nav .searchBox {
+    border: 0;
+    padding: 1rem;
+    flex: 1;
+    background-color: #fdfdfd;
+    color: #969BA0;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.nav .searchBox:focus {
+    outline: none;
+}
+  
+.nav .menuContainer{
+    width: 10rem;
+    margin-left: 5rem;
+    font-weight: 500;
+}
+
+.nav .menuContainer ul {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.nav .menuContainer ul li a:link,
+.nav .menuContainer ul li a:visited{
+    text-decoration: none;
+}
+
+.nav .menuContainer ul li a:hover,
+.nav .menuContainer ul li a:active{
+    color: #2F4CDD;
+    text-decoration: underline;
+}
+
+.nav .toolBar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 5rem;
+}
+
+.nav .toolBar .iconContainer {
+    display: inline-flex;
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 0 1rem;
+}
+
+.nav .toolBar .dotCounter{
+    height: 20px;
+    width: 20px;
+    border-radius: 100%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: calc(100% - 25px/2);
+    top: calc(10% - 25px/2);
+    color: #fff;
+}
+
+.iconNot{
+    background-color: #E9ECFF;
+    color: #2F4CDD;
+}
+
+.dotNot{
+    background-color: #2F4CDD;
+}
+
+.iconChat{
+    background-color: #E9ECFF;
+    color: #2F4CDD;
+}
+
+.dotChat{
+    background-color: #2F4CDD;
+}
+
+.iconGift{
+    background-color: #f1f1f1;
+    color: #3E4954;
+}
+
+.dotGift{
+    background-color: #3E4954;
+}
+
+.iconSet{
+    background-color: #FFEBE7;
+    color: #FF6D4D;
+}
+
+.dotSet{
+    background-color: #FF6D4D;
+}
+
+.nav .profile{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    position: relative;
+}
+
+.nav .profile .nameBar{
+    height: 40px;
+    width: 15rem;
+    background-color: #2F4CDD;
+    color: #f1f1f1;
+    border-radius: 5px;
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 1rem;
+    padding: 0 2rem;
+}
+
+.nav .profile .photoBar{
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    position: absolute;
+    top: 0;
+    left: calc(100% - 40px/2);
+    background-color: #c4c4c4;
+    border: 2px solid #fff;
+}
