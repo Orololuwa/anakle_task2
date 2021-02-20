@@ -1,17 +1,26 @@
 .App {
+  width: 100%;
+  overflow: hidden;
 
   .sideComp{
-    display: inline-block;
-    width: 20%;
     background-color: #fff;
     color: #2f4cdd;
     font-size: 1.6rem;
     padding: 1rem;
+    width: 22%;
+    display: inline-block;
   }
 
   .mainComp{  
-    display: inline-flex;
-    width: 80%;
-    flex-direction: column;
+    display: inline-block;
+    width: 78%;
+  }
+
+  .hideSideBar{
+    display: none;
+  }
+
+  .fullWidth{
+    width: 100%;
   }
 }

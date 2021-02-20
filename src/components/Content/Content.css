@@ -1,5 +1,4 @@
 .Content{
-    margin: 2rem 0;
     display: flex;
     flex-direction: column;
     background-color: #f9f9f9;
@@ -11,18 +10,48 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    padding: 1.5rem;
+    padding-right: 2.5rem;
+}
+
+.Content .titleContainer .title h2 {
+    font-weight: 600;
+    font-size: 2.8rem;
+}
+
+.Content .titleContainer .title p{
+    font-size: 1.8rem;
+    color: #969BA0;
+}
+
+.Content .titleContainer .title p strong{
+    color: #2f4cdd;
 }
 
 .Content .titleContainer .filterPeriod{
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    padding: 1rem 2rem;
+    background-color: #F4F5F9;
+    border-radius: 10px;
 }
 
-Content .titleContainer .filterPeriod .periodTitle{
+.Content .titleContainer .filterPeriod .periodTitle{
     padding-left: 2rem;
+    color: #3E4954;
 }
+
+.Content .titleContainer .filterPeriod .periodTitle h3{
+    font-weight: 600;
+    font-size: 1.6rem;
+}
+
+.Content .titleContainer .filterPeriod .periodTitle p{
+    font-weight: 400;
+    font-size: 1.3rem;
+}
+
 
 .arrowPrev, .arrowNext{
     width: 6.2rem;
@@ -44,6 +73,10 @@ Content .titleContainer .filterPeriod .periodTitle{
 
 .menu-item-wrapper{
     white-space: normal;
+}
+
+.menu-item-wrapper:focus{
+    outline: none;
 }
 
 .menu-wrapper--inner{

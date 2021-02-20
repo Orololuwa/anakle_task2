@@ -67,14 +67,14 @@ const content = (props) => {
             <div className={"titleContainer"}>
                 <div className={"title"}>
                     <h2>Reviews</h2>
-                    <h3><span>Dashboard/</span> <span>Customer Reviews</span></h3>
+                    <p><span><strong>Dashboard /</strong></span> <span>Customer Reviews</span></p>
                 </div>
                 <div className={"filterPeriod"}>
                     <CalendarClearOutline
-                        color={'#00000'} 
+                        color={'#2F4CDD'} 
                         title={"filterPeriod"}
-                        height="2rem"
-                        width="2rem"
+                        height="3rem"
+                        width="3rem"
                     />
                     <div className={"periodTitle"}>
                         <h3>Filter Periods</h3>

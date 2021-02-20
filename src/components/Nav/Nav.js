@@ -1,35 +1,50 @@
 import React from 'react';
 
+import Logo from '../Logo/Logo';
+
 import classes from './Nav.module.css';
 
-import { SearchOutline } from 'react-ionicons';
-import { NotificationsOutline } from 'react-ionicons';
-import { ChatboxOutline } from 'react-ionicons';
-import { GiftOutline } from 'react-ionicons';
-import { SettingsOutline } from 'react-ionicons'
+import { SearchOutline,NotificationsOutline,ChatboxOutline,GiftOutline,SettingsOutline,MenuOutline } from 'react-ionicons';
 
 
 
 
 const nav = (props) => {
+    let assignedClasses = [classes.logoMenuContainer];
+    if (props.show){
+        assignedClasses = [classes.logoMenuContainer, classes.hideLogoMenuContainer]
+    }
+
     return (
         <nav className={classes.nav}>
+            <div  className={assignedClasses.join(" ")}>
+                <MenuOutline
+                    color={'#2F4CDD'} 
+                    title={"menuIcon"}
+                    height="5rem"
+                    width="5rem"
+                    onClick={props.clicked}
+                />
+                <Logo />
+            </div>
+            
+
             <div className={classes.searchContainer}>
                 <input className={classes.searchBox} type="search" name="search" placeholder="Search here" />
                 <SearchOutline 
                     className={classes.searchIcon}
                     color={'#a4a4a4'} 
                     title={"Search Icon"}
-                    height="2rem"
-                    width="2rem"
+                    height="3rem"
+                    width="3rem"
                 />
             </div>
 
             <div className={classes.menuContainer}>
                 <ul>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Tools</a></li>
-                    <li><a href="#">Help</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Tools</a></li>
+                    <li><a href="/">Help</a></li>
                 </ul>
             </div>
 
